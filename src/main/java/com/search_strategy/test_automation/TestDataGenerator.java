@@ -11,24 +11,6 @@ public class TestDataGenerator {
     private static final Logger logger = Logger.getLogger(TestDataGenerator.class.getName());
 
     /**
-     * Generates an array of integers with random numbers.
-     *
-     * @param size The size of the array to be generated
-     * @return An array of integers with random numbers
-     */
-    public static int[] generateRandomArray(int size) {
-        logger.log(Level.INFO, "Starting the generation of a random array with size: " + size);
-
-        int[] array = new int[size];
-        for (int i = 0; i < size; i++) {
-            array[i] = getRandomTarget();
-        }
-
-        logger.log(Level.INFO, "Random array generated successfully.");
-        return array;
-    }
-
-    /**
      * Generates an array of integers with random numbers and sorts it.
      *
      * @param size The size of the array to be generated
